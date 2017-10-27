@@ -254,17 +254,17 @@ button:focus,
 
 /*navbar toggle*/
 .navbar-toggle {
-    margin        : 5px 0;
-    padding       : 11px 10px;
+    margin        : 15px 0px;
+    padding       : 11px 5px;
     background    : transparent;
     }
 
 .navbar-toggle:hover {
-    color: #fff;
+    color: rgb(10, 8, 8);
     }
 
 .navbar-toggle .icon-bar {
-    background: #fff;
+    background: rgb(12, 11, 11);
     }
 
 /*Navigation Style*/
@@ -274,8 +274,7 @@ button:focus,
     }
 
 .main-menu .nav li a {
-    color       :  #ff6666
-;
+    color       :  #ff6666;
     font-weight : 500;
     padding     : 15px 0 15px 30px;
     }
@@ -307,7 +306,7 @@ button:focus,
         }
 
     .navbar-collapse {
-        margin-top : 10px;
+        margin-top : 20px;
         background: #fff;
         }
     }
