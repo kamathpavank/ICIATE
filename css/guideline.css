@@ -1,49 +1,173 @@
+/*
+Template Name: finadvisor
+Description: HTML5 / CSS3 One Page
+Version: 1.0
+Author: uiCookies.com
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+    2. Global Typography
+    3. Section Background / .gray-bg / .white-bg
+	4. Header /
+	    4.1. .top-bar
+		4.2. Navigation / .navbar
+	5. Hero Slider / .hero-slide
+	6. Services / .services
+	7. About Us / .about-us
+	8. Testimonial / .testimonialOne
+	9. Team / .team
+	10. Pricing Table / .pricing-section
+	11. Client Logo / .client-logo
+	12. Contact Section
+	    12.1. #googleMap
+	    12.2. Contact Form
+	13. Footer / .footer
+	14. Preloader / #preloader
+
+
+# [Color codes]
+
+# Body  (text): #888
+# Heading Color #0E1555
+# Theme Color (link color) #FD367E
+# Mid grey (sub header) #666666
+# -------------------------------------------------------------------*/
+
+body {
+    font-family : 'Roboto', sans-serif;
+    font-size   : 17px;
+    line-height : 1.7em;
+    color       : #353e55;
+    font-weight : 100;
+    background  : #ffffff;
+    border      : 10px solid #fff;
+    }
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin : 0 0 15px;
+    color  : #0e1555;
+    }
+
+h1 {
+    font-size   : 36px;
+    line-height : 1.2em;
+    font-weight : 700;
+    }
+
+h2 {
+    font-size   : 30px;
+    line-height : 1.5em;
+    font-weight : 400;
+    }
+
+h3 {
+    font-size   : 24px;
+    line-height : 1.5em;
+    font-weight : 300;
+    }
+
+h4 {
+    font-size   : 18px;
+    line-height : 1.5em;
+    font-weight : 300;
+    }
+
+h5 {
+    font-size   : 16px;
+    line-height : 1.5em;
+    font-weight : 500;
+    }
+
+h6 {
+    font-size   : 15px;
+    line-height : 24px;
+    }
+
+/* --------------------------------------
+ * LINK STYLE
+ *------------------------------------------*/
+a {
+    color              :#fffff;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+    }
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration : none;
+    outline         : none
+    }
+
+a:hover,
+a:focus {
+    text-decoration : none;
+    color           : #999999;
+    }
+
+p {
+    margin-bottom : 20px;
+    }
+
+p.lead {
+    font-size   : 19px;
+    line-height : 1.7em;
+    }
+
+ul {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+    }
+
+
+/*-----------------------------
+ * NAVIGATION & HEADER STYLE
+ *-------------------------------*/
+
 .header {
     position : absolute;
     left     : 15px;
     right    : 15px;
     top      : 40px;
     z-index  : 9;
-	}
-	
-/* Sticky Menu */
-.sticky-nav {
-    position           : fixed;
-    right              : 0;
-    left               : 0;
-    top                : 0;
-    z-index            : 999;
-    background         : #ffffff !important;
-    padding            : 5px 0;
-    box-shadow         : 0 2px 5px rgba(0, 0, 0);
-    -webkit-transition : all .5s ease-in-out;
-    -moz-transition    : all .5s ease-in-out;
-    transition         : all .5s ease-in-out;
     }
 
-.sticky-nav .nav li a {
-    color : #e76012;
+/*Logo*/
+.navbar-brand {
+    padding : 0;
+    height  : auto;
+    /*margin  : 5px 0 !important;*/
     }
 
-.sticky-nav .navbar-toggle .icon-bar{
-    background: #333;
-    }
+@media (max-width : 768px) {
+    .navbar-brand {
+        width : 200px;
+        }
 
-@media (max-width: 768px) {
-    .sticky-nav{
-        padding-left: 10px;
-        padding-right: 10px;
+    .navbar-brand img {
+        max-width : 100%;
+        height    : auto;
         }
     }
-
-
 
 /*navbar*/
 
 .navbar {
     color : black;
     border-radius  : 0;
-    /* padding        : 30px 0; */
+    padding        : 30px 0;
     /*background     : transparent;*/
     margin         : 0;
     font-size      : 15px;
@@ -67,7 +191,7 @@ navbar toggle
     }
 
 .navbar-toggle .icon-bar {
-    background: #fff;
+    background: rgb(10, 9, 9);
     }
 
 /*Navigation Style*/
@@ -116,16 +240,119 @@ navbar toggle
     }
 
 
-    /* .jumbotron {
-        background-size       : cover;
-        padding               : 0;
-        margin                : 0;
-        height                : 100vh;
-        min-height            : 700px;
-        vertical-align        : middle;
-        position              : relative;
-        background-attachment : fixed;
-        background-repeat     : no-repeat;
-        background-position   : center center;
-        
-        } */
+/* Sticky Menu */
+.sticky-nav {
+    position           : fixed;
+    right              : 0;
+    left               : 0;
+    top                : 0;
+    z-index            : 999;
+    background         : #ffffff !important;
+    padding            : 5px 0;
+    box-shadow         : 0 2px 5px rgba(0, 0, 0);
+    -webkit-transition : all .5s ease-in-out;
+    -moz-transition    : all .5s ease-in-out;
+    transition         : all .5s ease-in-out;
+    }
+
+.sticky-nav .nav li a {
+    color : #ce7611;
+    }
+
+.sticky-nav .navbar-toggle .icon-bar{
+    background: #333;
+    }
+
+@media (max-width: 768px) {
+    .sticky-nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+/* --------------------------
+ * Client Logo 
+ *---------------------------*/
+
+.client-logo a img {
+    width              : 100%;
+    opacity            : 1;
+    -webkit-transition : all 0.8s ease 0s;
+    -moz-transition    : all 0.8s ease 0s;
+    -o-transition      : all 0.8s ease 0s;
+    transition         : all 0.8s ease 0s;
+    }
+
+.client-logo a:hover img {
+    opacity : .5;
+    }
+
+@media (max-width : 992px) {
+    .client-logo .section-margin {
+        margin-bottom : 30px;
+        }
+    }
+
+
+
+
+
+
+/* Copyright */
+
+.footer .copyright-section {
+    font-size : 13px;
+    color     : #888888;
+    padding   : 30px 0;
+    }
+
+.footer .copyright-section .copytext {
+    font-weight : 400;
+    display     : block;
+    }
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+#preloader {
+    background : #ffffff;
+    bottom     : 0;
+    left       : 0;
+    position   : fixed;
+    right      : 0;
+    top        : 0;
+    z-index    : 9999;
+    }
+
+#status,
+.status-mes {
+    /*background-image    : url(../img/preloader.gif);*/
+    background-position : center;
+    background-repeat   : no-repeat;
+    height              : 200px;
+    left                : 50%;
+    margin              : -100px 0 0 -100px;
+    position            : absolute;
+    top                 : 50%;
+    width               : 200px;
+    }
+
+.status-mes {
+    background : none;
+    left       : 0;
+    margin     : 0;
+    text-align : center;
+    top        : 65%;
+    }
+
+    ul{
+        font-size: 20px;
+    }
