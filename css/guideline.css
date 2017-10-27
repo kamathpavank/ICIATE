@@ -1,0 +1,131 @@
+.header {
+    position : absolute;
+    left     : 15px;
+    right    : 15px;
+    top      : 40px;
+    z-index  : 9;
+	}
+	
+/* Sticky Menu */
+.sticky-nav {
+    position           : fixed;
+    right              : 0;
+    left               : 0;
+    top                : 0;
+    z-index            : 999;
+    background         : #ffffff !important;
+    padding            : 5px 0;
+    box-shadow         : 0 2px 5px rgba(0, 0, 0);
+    -webkit-transition : all .5s ease-in-out;
+    -moz-transition    : all .5s ease-in-out;
+    transition         : all .5s ease-in-out;
+    }
+
+.sticky-nav .nav li a {
+    color : #e76012;
+    }
+
+.sticky-nav .navbar-toggle .icon-bar{
+    background: #333;
+    }
+
+@media (max-width: 768px) {
+    .sticky-nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+    }
+
+
+
+/*navbar*/
+
+.navbar {
+    color : black;
+    border-radius  : 0;
+    /* padding        : 30px 0; */
+    /*background     : transparent;*/
+    margin         : 0;
+    font-size      : 15px;
+    text-transform : uppercase;
+    }
+
+@media (max-width : 768px) {
+    .navbar {
+        padding : 12px;
+        }
+    }
+
+navbar toggle
+.navbar-toggle {
+    margin        : 5px 2px;
+    padding       : 11px 12px;
+    }
+
+.navbar-toggle:hover {
+    color: #fff;
+    }
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+    }
+
+/*Navigation Style*/
+
+.main-menu .navbar-right {
+    margin-right : -15px;
+    }
+
+.main-menu .nav li a {
+    color       :  #ff6666
+;
+    font-weight : 500;
+    padding     : 15px 0 15px 30px;
+    }
+
+.main-menu .nav li a:hover,
+.main-menu .nav li.active a {
+    color      : #F39C12;
+    /*background : transparent;*/
+    }
+
+.main-menu .nav li a:focus {
+    background : transparent;
+    }
+
+@media (max-width : 991px) {
+    .main-menu .nav li a {
+        padding-left : 15px;
+        }
+    }
+
+@media (max-width : 768px) {
+    .main-menu .nav li {
+        text-align : center;
+        }
+
+    .main-menu .nav li a {
+        padding : 5px 0;
+        color: #fff;
+        }
+
+    .navbar-collapse {
+        margin-top : 10px;
+        background: #B2BABB;
+        }
+    }
+
+
+    /* .jumbotron {
+        background-size       : cover;
+        padding               : 0;
+        margin                : 0;
+        height                : 100vh;
+        min-height            : 700px;
+        vertical-align        : middle;
+        position              : relative;
+        background-attachment : fixed;
+        background-repeat     : no-repeat;
+        background-position   : center center;
+        
+        } */
