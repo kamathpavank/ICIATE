@@ -263,7 +263,7 @@ navbar toggle
     }
 
 .navbar-toggle .icon-bar {
-    background: #fff;
+    background: rgb(7, 0, 0);
     }
 
 /*Navigation Style*/
@@ -307,7 +307,7 @@ navbar toggle
 
     .navbar-collapse {
         margin-top : 10px;
-        background: #B2BABB;
+        background: rgba(0, 4, 5, 0.918);
         }
     }
 
