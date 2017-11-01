@@ -219,8 +219,9 @@ button:focus,
 /*Logo*/
 .navbar-brand {
     padding : 0;
-    height  : auto;
-    /*margin  : 5px 0 !important;*/
+    height  : 7%;
+    width: 7%;
+    /* margin  : 5px 0 !important; */
     }
 
 @media (max-width : 768px) {
@@ -320,7 +321,7 @@ navbar toggle
     top                : 0;
     z-index            : 999;
     background         : #e4e8fc !important;
-    padding            : 5px 0;
+    padding            : 0px 0;
     box-shadow         : 0 2px 5px rgba(0, 0, 0);
     -webkit-transition : all .5s ease-in-out;
     -moz-transition    : all .5s ease-in-out;
@@ -350,7 +351,7 @@ navbar toggle
     background            : url("../img/img-jumbotron-bg.jpg");
     background-size       : cover;
     padding               : 0;
-    margin                : 0;
+    margin                : 40px 0px 0px 0px;
     height                : 100vh;
     min-height            : 700px;
     vertical-align        : middle;
@@ -399,6 +400,7 @@ navbar toggle
 @media (max-width : 600px) {
     .jumbo .content {
         min-height : auto;
+        margin-top : 80px;
         }
 
     .jumbo .content h1 {
